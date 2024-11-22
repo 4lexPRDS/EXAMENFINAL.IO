@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Institución Educativa - Curso</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+ 
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Bienvenidos al Curso de html y web  <img src="HTML5_logo_and_wordmark.svg.png" alt="" style="width: 100%; max-width: 60px;"></h1>
+   
+   </header>
+   <center> <div class="container" id="login-section">
+    <b></b><h1>introduccion</h1></b>
+    <p>El curo darara las bases fundamentales de html al usuario como una que en un heded un body y demas conceptos de html despues del curso se realizara una prueba valorada en 5 puntos para probar los conocimientos del usuario.</p>
+    <h2>Iniciar sesión</h2>
+    <label for="username">Usuario:</label>
+    <input type="text" id="username" placeholder="Ingresa tu usuario"><br><br>
+    <label for="password">Contraseña:</label>
+    <input type="password" id="password" placeholder="Ingresa tu contraseña"><br><br>
+    <button onclick="login()">Acceder</button>
+    <p id="error-message" style="color: red;"></p>
+    </center>
+  </div> 
+
+ 
+  <div class="container hidden" id="course-section">
+ 
+     <h2>HTML y la web</h2>
+    <h2>Contenido del Curso</h2>
+
+    <h3 id="tema2">Conceptos Básicos de HTML</h3>
+    <p>HTML es el lenguaje que se emplea para el desarrollo de páginas de internet.
+
+      Este lenguaje está constituido de elementos que el navegador interpreta y las despliega en la pantalla de acuerdo a su objetivo. Veremos que hay elementos para disponer imágenes y videos sobre una página, hipervínculos que nos permiten dirigirnos a otra página, listas, tablas para tabular datos etc.
+      </p>
+    <br>
+    <h4>Estructura básica de un documento HTML</h4>
+    <p>
+      Las instrucciones HTML están encerradas entre los caracteres: < y >.
+      Muchos elementos HTML requieren una marca de comienzo y otra de finalización. Todo aquello que está fuera de las marcas del lenguaje se imprime en la pantalla (dentro del navegador).
+      La estructura básica de una página HTML es:
+        <pre>
+      &lt;!DOCTYPE html&gt;
+      &lt;html lang="es"&gt;
+      &lt;head&gt;
+      &lt;meta charset="UTF-8"&gt;
+      &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+      &lt;title&gt;Título de la página&lt;/title&gt;
+      &lt;/head&gt;
+      &lt;body&gt;
+      &lt;!-- Contenido visible de la página --&gt;
+      &lt;/body&gt;
+      &lt;/html&gt;
+    </pre>
+    </p>
+    <p>
+      <br>
+    <img src="tabla1-1.jpg" alt="" style="width: 100%; max-width: 600px;">
+    <br>
+    <br>
+        <b>&lt;!DOCTYPE html&gt;</b>: Declara el tipo de documento como HTML5.
+        <br>
+        <b>&lt;html&gt;</b>: Elemento raíz que contiene todo el contenido HTML.
+        <br>
+        <b>&lt;head&gt;</b>: Contiene metadatos sobre el documento (no visibles para el usuario).
+        <br>
+        <b>&lt;meta&gt;</b> Define información como el conjunto de caracteres y la configuración de la vista.
+        <br>
+        <b>&lt;title&gt;</b>: Define el título que aparece en la pestaña del navegador.
+        <br>
+        <b>&lt;body&gt;</b>: Contiene todo el contenido visible de la página.
+        <br>
+
+    </p>
+    <h4>Elementos y etiquetas </h4>
+    <p>
+      Etiqueta: Los componentes básicos de HTML están delimitados por < y >.
+      <br>
+      Ejemplo: <b>&lt;p&gt;</b>Este es un párrafo<b>&lt;/p&gt;</b>.
+      <br>
+      <br>
+      Atributos: Proporcionan información adicional sobre las etiquetas.
+      <br>
+      Ejemplo: <b>&lt;img src="imagen.jpg" alt="Descripción de la imagen"&gt;</b>.
+      <br>
+    </p>
+
+    <h4>Etiquetas comunes</h4>
+    <p>
+      Estructura del contenido:
+      <br>
+      <br>
+      Encabezados: <b>&lt;h1&gt; a &lt;h6&gt;</b> (del más importante al menos importante).
+      <br>
+      <br>
+      Ejemplo: <b>&lt;h1>Encabezado principal&lt;/h1></b>.
+      <br>
+      Párrafos: <b>&lt;p>Texto de un párrafo&lt;/p></b>.
+      <br>
+      <br>
+      División: <b>&lt;div></b> para agrupar contenido en bloques.
+      <br>
+      <br>
+      Span:   <b>&lt;span></b> para agrupar contenido en línea.
+      <br>
+      <br>
+      Formato del texto:
+      <br>
+      Negrita: <b>&lt;b></b>  o <b>  &lt;strong></b> (con énfasis).
+      <br>
+      Cursiva:  <b>&lt;i> o  &lt;em> </b>(con énfasis).
+      <br>
+      Subrayado:  <b>&lt;u></b>.
+      <br>
+      <br>
+    </p>
+
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/mNbnV3aN3KA?si=naT_FV0754HO-GPm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <p>contenido adicional</p>
+    <ul>
+      <a href="https://www.significados.com/web/">Tema 1: Introducción</a>
+      <br>
+      <a href="https://www.tutorialesprogramacionya.com/htmlya/">Tema 2: Conceptos Básicos</a>
+    </ul>
+
+    <div class="evaluation-section" id = "cuestionamiento">
+      <h2>Evaluación</h2>
+      <form id="quiz-form">
+        <h3>1. ¿Qué es html?</h3>
+        <input type="radio" id="q1a" name="q1" value="incorrecto">
+        <label for="q1a">Un sistema operativo</label><br>
+        <input type="radio" id="q1b" name="q1" value="correcto">
+        <label for="q1b">Un lenguaje de programación que se empela en el desarrollo web</label><br>
+
+        <h3>2. Selecciona las características de HTML:</h3>
+        <input type="checkbox" id="q2a" value="correcto">
+        <label for="q2a">Estructura páginas web</label><br>
+        <input type="checkbox" id="q2b" value="incorrecto">
+        <label for="q2b">Controla bases de datos</label><br>
+
+        <h3>3. contiene metadatos sobre el documento:</h3>
+        <select id="q3">
+          <option value="correcto">head</option>
+          <option value="incorrecto">meta</option>
+        </select><br><br>
+
+        <h3>4. Selecciona las etiquetas para formato de letra en negrita:</h3>
+        <input type="checkbox" id="q4a" value="correcto">
+        <label for="q4a">b</label><br>
+        <input type="checkbox" id="q4b" >
+        <label for="q4b">strong</label><br>
+        <input type="checkbox" id="q4c" >
+        <label for="q4c">em</label><br>
+
+        <h3>5. Selecciona las etiquetas para encabesado:</h3>
+        <input type="checkbox" id="q5a">
+        <label for="q5a">h1</label><br>
+        <input type="checkbox" id="q5b">
+        <label for="q5b">a</label><br>
+        <input type="checkbox" id="q5c">
+        <label for="q5c">h3</label><br>
+
+        <button type="button" onclick="evaluateQuiz()">Enviar</button>
+      </form>
+      <p id="quiz-result"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
